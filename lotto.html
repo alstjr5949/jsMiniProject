@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>로또번호 추첨기</title>
+  </head>
+  <body>
+    <div class="numWrapper">
+      <div class="ball ball1">1</div>
+      <div class="ball ball2">2</div>
+      <div class="ball ball3">3</div>
+      <div class="ball ball4">4</div>
+      <div class="ball ball5">5</div>
+      <div class="ball ball6">6</div>
+      <button class="numBtn" type="button">번호 추첨하기</button>
+    </div>
+    <script>
+      let lotto = [];
+      lotto.sort((a, b) => a - b);
+
+      numBtn.addEventListener("click", function () {
+        while (lotto.length < 6) {
+          if (lotto.length == 6) {
+          }
+          // 랜덤 숫자 생성
+          let num = parseInt(Math.random() * 45 + 1);
+          // 중복 제거
+          if (lotto.indexOf == -1) {
+            lotto.push(num);
+          }
+        }
+      });
+      console.log(lotto);
+    </script>
+  </body>
+</html>
